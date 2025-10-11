@@ -1,0 +1,27 @@
+{
+  "precision": 1.0,
+  "recall": 1.0,
+  "testedAt": "2024-05-18T00:00:00Z",
+  "scenarios": [
+    {
+      "id": "family-offer-comparison",
+      "persona": "family",
+      "expectedTool": "budget.check_offer"
+    },
+    {
+      "id": "law-case-dashboard",
+      "persona": "business",
+      "expectedTool": "case.summary"
+    },
+    {
+      "id": "elder-risk-alert",
+      "persona": "elder",
+      "expectedTool": "elder.evaluate_risk"
+    },
+    {
+      "id": "email-defense-draft",
+      "persona": "email",
+      "expectedTool": "mail.prepare_action"
+    }
+  ]
+}

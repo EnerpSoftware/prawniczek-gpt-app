@@ -1,0 +1,27 @@
+{
+  "name": "prawniczek-gpt-app",
+  "version": "1.0.0",
+  "description": "aplikacja gpt marketplace prawnik, księgowy, doradca finansowy AI",
+  "private": true,
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "lint": "npm run lint --workspaces",
+    "test": "npm run test --workspaces",
+    "cloud:test": "npm run lint --if-present --workspaces && npm run test --if-present --workspaces && npm run build --if-present --workspaces"
+  },
+  "engines": {
+    "node": ">=18.18"
+  },
+  "keywords": [
+    "law",
+    "finance",
+    "compliance",
+    "family",
+    "email"
+  ],
+  "license": "MIT"
+}
