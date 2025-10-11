@@ -1,0 +1,21 @@
+{
+  "name": "prawniczek",
+  "displayName": "Prawniczek — doradca",
+  "visibility": "private",
+  "description": "Guardrails-first advisor dla rodzin, kancelarii i seniorów: budżety, sprawy, Elder Shield i Email Defense.",
+  "keywords": ["rodzina", "kancelaria", "senior", "email"],
+  "starterPrompts": [
+    "Porównaj kredyty dla workspace Mieszkanie 2026 i pokaż przekroczenia guardrails.",
+    "Zaktualizuj status sprawy 'Klient Kowalski' i wskaż czerwone flagi.",
+    "Sprawdź czy wiadomość do babci to scam i przygotuj alert dla syna.",
+    "Przeskanuj skrzynkę firmową, oznacz phishing i pokaż draft wypisania."
+  ],
+  "compliance": {
+    "privacy": "Dane minimalizujemy, wymagamy consent_token i krótkich TTL na plikach.",
+    "safety": "Wszystkie akcje wychodzące to drafty czekające na zatwierdzenie.",
+    "latencyTargets": {
+      "firstValueSeconds": 120,
+      "emailScanSeconds": 30
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@prawniczek/server",
+  "version": "1.0.0",
+  "description": "MCP server for Prawniczek tools and metadata",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "tsc --noEmit",
+    "test": "npm run build && node --test dist/tests/golden-prompts.test.js"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5"
+  }
+}
